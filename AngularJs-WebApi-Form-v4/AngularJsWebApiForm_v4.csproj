@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="NPoco" Version="3.9.0" />
+    <PackageReference Include="NPoco.JsonNet" Version="3.4.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\448c34a56d699c29117adc64c43affeb.woff2" />
+    <None Include="wwwroot\89889688147bd7575d6327160d64e760.svg" />
+    <None Include="wwwroot\angularApp\app.component.js" />
+    <None Include="wwwroot\angularApp\app.component.js.map" />
+    <None Include="wwwroot\angularApp\app.js" />
+    <None Include="wwwroot\angularApp\app.js.map" />
+    <None Include="wwwroot\angularApp\background.service.js" />
+    <None Include="wwwroot\angularApp\background.service.js.map" />
+    <None Include="wwwroot\angularApp\register\data.service.js" />
+    <None Include="wwwroot\angularApp\register\data.service.js.map" />
+    <None Include="wwwroot\angularApp\register\date.service.js" />
+    <None Include="wwwroot\angularApp\register\date.service.js.map" />
+    <None Include="wwwroot\angularApp\register\manageDB.service.js" />
+    <None Include="wwwroot\angularApp\register\manageDB.service.js.map" />
+    <None Include="wwwroot\angularApp\register\register.component.js" />
+    <None Include="wwwroot\angularApp\register\register.component.js.map" />
+    <None Include="wwwroot\angularApp\register\toast.service.js" />
+    <None Include="wwwroot\angularApp\register\toast.service.js.map" />
+    <None Include="wwwroot\angularApp\register\userDatabase.js" />
+    <None Include="wwwroot\angularApp\register\userDatabase.js.map" />
+    <None Include="wwwroot\bundle.js" />
+    <None Include="wwwroot\vendors.js" />
+    <None Include="wwwroot\webpack.config.js" />
+    <None Include="wwwroot\webpack.config.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="angularApp\register\data.service.ts" />
+  </ItemGroup>
+
+</Project>

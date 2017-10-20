@@ -1,0 +1,41 @@
+<md-toolbar layout="row" class="md-toolbar-tools">
+    <h1>Register User</h1>
+</md-toolbar>
+<div layout-padding layout="column">
+    <div class="md-body-1">
+        <md-content>
+            <form name="$ctrl.userForm" ng-submit="$ctrl.submit($ctrl.form)" novalidate>
+                <md-input-container>
+                    <label>Name</label>
+                    <input name="firstName" ng-model="$ctrl.form.firstName" required md-no-asterisk>
+                    <div ng-messages="$ctrl.userForm.firstName.$error" ng-show="$ctrl.userForm.firstName.$touched">
+                        <div ng-message="required">Name is required.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container>
+                    <label>Lastname</label>
+                    <input name="lastName" ng-model="$ctrl.form.lastName" required md-no-asterisk>
+                    <div ng-messages="$ctrl.userForm.lastName.$error" ng-show="$ctrl.userForm.lastName.$touched">
+                        <div ng-message="required">Lastname is required.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container>
+                    <label>Address</label>
+                    <input name="address" ng-model="$ctrl.form.address" required md-no-asterisk>
+                    <div ng-messages="$ctrl.userForm.address.$error" ng-show="$ctrl.userForm.address.$touched">
+                        <div ng-message="required">Address is required.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container>
+                    <md-datepicker name="birthday" md-placeholder="Birthday" ng-model="$ctrl.form.birthday" required md-no-asterisk></md-datepicker>
+                    <div ng-messages="$ctrl.userForm.birthday.$error" ng-show="$ctrl.userForm.birthday.$touched">
+                        <div ng-message="required">Birthday is required.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container>
+                    <md-button class="md-primary md-raised up" ng-disabled="$ctrl.userForm.$invalid" type="submit">Register</md-button>
+                </md-input-container>
+            </form>
+        </md-content>
+    </div>
+</div>

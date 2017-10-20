@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./wwwroot/",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es2015",
+    "allowJs": true
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
